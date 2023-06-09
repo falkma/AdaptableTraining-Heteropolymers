@@ -1,0 +1,1572 @@
+HOOMD-blue 2.9.0 DOUBLE HPMC_MIXED TBB SSE SSE2 SSE3 
+Compiled: 02/04/2020
+Copyright (c) 2009-2019 The Regents of the University of Michigan.
+-----
+You are using HOOMD-blue. Please cite the following:
+* J A Anderson, C D Lorenz, and A Travesset. "General purpose molecular dynamics
+  simulations fully implemented on graphics processing units", Journal of
+  Computational Physics 227 (2008) 5342--5359
+* J Glaser, T D Nguyen, J A Anderson, P Lui, F Spiga, J A Millan, D C Morse, and
+  S C Glotzer. "Strong scaling of general-purpose molecular dynamics simulations
+  on GPUs", Computer Physics Communications 192 (2015) 97--107
+-----
+HOOMD-blue is running on the CPU
+oscillation42.py:115  |  system = hoomd.init.read_snapshot(snapshot);
+notice(2): Group "all" created containing 13 particles
+oscillation42.py:116  |  nl = hoomd.md.nlist.cell()
+oscillation42.py:118  |  harmonic = hoomd.md.bond.harmonic()
+oscillation42.py:119  |  harmonic.bond_coeff.set('polymer', k=100.0*T, r0=1)
+oscillation42.py:122  |  stiffness = hoomd.md.angle.harmonic()
+oscillation42.py:123  |  stiffness.angle_coeff.set('polymer', k=lp*T, t0=np.pi)
+oscillation42.py:125  |  lj = hoomd.md.pair.lj(r_cut=2**(1/6), nlist=nl)
+oscillation42.py:126  |  lj.set_params(mode='shift')
+oscillation42.py:128  |  morse = hoomd.md.pair.morse(r_cut=2.0, nlist=nl)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:138  |          lj.pair_coeff.set(colors[i], colors[j], epsilon=1.0, sigma=1.0)
+oscillation42.py:139  |          morse.pair_coeff.set(colors[i], colors[j], D0=C[i,j], alpha=6, r0=1.1)
+oscillation42.py:157  |  wall_lj = hoomd.md.wall.force_shifted_lj(wallstructure, r_cut=2**(1/6))
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:159  |      wall_lj.force_coeff.set(colors[i], sigma=1.0,epsilon=1.0)
+oscillation42.py:161  |  all = hoomd.group.all();
+oscillation42.py:164  |  hoomd.md.integrate.mode_standard(dt=dt);
+oscillation42.py:165  |  hoomd.md.integrate.langevin(group=all, kT=T, dscale = 5, seed=123);
+notice(2): integrate.langevin/bd is determining gamma from particle diameters
+simulation set!
+(8_w,16)-aCMA-ES (mu_w=4.8,w_1=32%) in dimension 66 (seed=199120, Fri Aug 27 17:29:02 2021)
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+0
+********
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+1
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+2
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+3
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+4
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.025
+5
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.025
+-0.0
+-0.025
+-0.0
+-0.0
+6
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.05
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.025
+7
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.025
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+8
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.025
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.05
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.075
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+9
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.0
+-0.0
+-0.025
+-0.05
+-0.025
+-0.0
+-0.0
+-0.025
+-0.0
+-0.05
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.075
+10
+****************Solved***************
+Mean cumulative reward over 5 episodes:0.00
+********
+-0.0
+-0.0
+-0.05
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.125
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+11
+****************Solved***************
+Mean cumulative reward over 5 episodes:0.00
+********
+-0.025
+-0.0
+-0.0
+-0.0
+-0.1
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+12
+****************Solved***************
+Mean cumulative reward over 5 episodes:0.00
+********
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.05
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.025
+13
+****************Solved***************
+Mean cumulative reward over 5 episodes:0.00
+********
+-0.0
+-0.0
+-0.025
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.025
+-0.0
+-0.0
+-0.025
+-0.025
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+14
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.05
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+15
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.025
+-0.075
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+16
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.025
+-0.0
+-0.0
+-0.0
+-0.025
+-0.05
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+17
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.0
+-0.025
+-0.0
+-0.05
+-0.025
+-0.025
+-0.0
+-0.0
+-0.075
+-0.05
+-0.0
+-0.0
+-0.0
+-0.05
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+18
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.075
+-0.0
+-0.0
+-0.125
+19
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.0
+-0.0
+-0.05
+-0.075
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+20
+****************Solved***************
+Mean cumulative reward over 5 episodes:0.00
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.025
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+21
+****************Solved***************
+Mean cumulative reward over 5 episodes:0.00
+********
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.05
+-0.0
+-0.025
+-0.0
+-0.05
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+22
+****************Solved***************
+Mean cumulative reward over 5 episodes:0.00
+********
+-0.025
+-0.0
+-0.025
+-0.0
+-0.025
+-0.0
+-0.05
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.05
+23
+****************Solved***************
+Mean cumulative reward over 5 episodes:0.00
+********
+-0.025
+-0.0
+-0.0
+-0.025
+-0.0
+-0.05
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.025
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+24
+****************Solved***************
+Mean cumulative reward over 5 episodes:0.00
+(8_w,16)-aCMA-ES (mu_w=4.8,w_1=32%) in dimension 66 (seed=235830, Fri Aug 27 21:09:37 2021)
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+25
+****************Solved***************
+Mean cumulative reward over 5 episodes:0.00
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+26
+****************Solved***************
+Mean cumulative reward over 5 episodes:0.00
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+27
+****************Solved***************
+Mean cumulative reward over 5 episodes:0.00
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+28
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+29
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.01
+********
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+30
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.02
+********
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.05
+-0.0
+-0.025
+31
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.03
+********
+-0.025
+-0.0
+-0.05
+-0.05
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.05
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+-0.0
+32
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.03
+********
+-0.0
+-0.05
+-0.025
+-0.0
+-0.0
+-0.0
+-0.025
+-0.0
+-0.0
+-0.025
+-0.025
+-0.075
+-0.0
+-0.05
+-0.0
+-0.175
+-0.0
+-0.0
+-0.025
+-0.1
+33
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.07
+********
+-0.0
+-0.225
+-0.125
+-0.0
+-0.1
+-0.05
+-0.075
+-0.075
+-0.0
+-0.025
+-0.025
+-0.075
+-0.05
+-0.075
+-0.025
+-0.075
+-0.025
+-0.025
+-0.0
+-0.125
+34
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.11
+********
+-0.275
+-0.1
+-0.05
+-0.425
+-0.025
+-0.4
+-0.125
+-0.0
+-0.05
+-0.225
+-0.0
+-0.0
+-0.225
+-0.0
+-0.025
+-0.075
+-0.125
+-0.0
+-0.25
+-0.175
+35
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.18
+********
+-0.2
+-0.2
+-0.1
+-0.275
+-0.325
+-0.45
+-0.025
+-0.0
+-0.075
+-0.05
+-0.5
+-0.4
+-0.125
+-0.2
+-0.075
+-0.125
+-0.3
+-0.225
+-0.025
+-0.175
+36
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.28
+********
+-0.35
+-0.25
+-0.325
+-0.425
+-0.3
+-0.225
+-0.2
+-0.35
+-0.225
+-0.25
+-0.2
+-0.6
+-0.45
+-0.2
+-0.35
+-0.475
+-0.2
+-0.45
+-0.5
+-0.225
+37
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.38
+********
+-0.325
+-0.275
+-0.325
+-0.7
+-0.375
+-0.275
+-0.45
+-0.175
+-0.6
+-0.65
+-0.3
+-0.15
+-0.475
+-0.125
+-0.225
+-0.325
+-0.45
+-0.175
+-0.625
+-0.475
+38
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.49
+********
+-0.575
+-0.35
+-0.125
+-0.475
+-0.6
+-0.225
+-0.45
+-0.6
+-0.7
+-0.65
+-0.125
+-0.05
+-0.475
+-0.55
+-0.35
+-0.125
+-0.3
+-0.5
+-0.65
+-0.275
+39
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.58
+********
+-0.4
+-0.4
+-0.375
+-0.475
+-0.3
+-0.2
+-0.15
+-0.525
+-0.7
+-0.475
+-0.3
+-0.075
+-0.35
+-0.15
+-0.525
+-0.6
+-0.65
+-0.475
+-0.4
+-0.425
+40
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.64
+********
+-0.675
+-0.225
+-0.675
+-0.35
+-0.575
+-0.175
+-0.7
+-0.15
+-0.45
+-0.175
+-0.0
+-0.275
+-0.525
+-0.125
+-0.625
+-0.125
+-0.325
+-0.55
+-0.45
+-0.375
+41
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.68
+********
+-0.125
+-0.2
+-0.525
+-0.2
+-0.65
+-0.7
+-0.3
+-0.175
+-0.425
+-0.3
+-0.7
+-0.425
+-0.375
+-0.25
+-0.55
+-0.6
+-0.55
+-0.7
+-0.075
+-0.3
+42
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.70
+********
+-0.325
+-0.7
+-0.5
+-0.6
+-0.35
+-0.375
+-0.5
+-0.175
+-0.6
+-0.7
+-0.7
+-0.2
+-0.7
+-0.25
+-0.65
+-0.625
+-0.7
+-0.7
+-0.55
+-0.375
+43
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.70
+********
+-0.575
+-0.575
+-0.425
+-0.45
+-0.4
+-0.2
+-0.45
+-0.275
+-0.175
+-0.0
+-0.65
+-0.6
+-0.7
+-0.4
+-0.625
+-0.4
+-0.7
+-0.175
+-0.675
+-0.15
+44
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.70
+********
+-0.25
+-0.575
+-0.7
+-0.4
+-0.5
+-0.325
+-0.275
+-0.2
+-0.7
+-0.0
+-0.175
+-0.7
+-0.0
+-0.675
+-0.7
+-0.2
+-0.675
+-0.45
+-0.425
+-0.525
+45
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.70
+********
+-0.25
+-0.45
+-0.675
+-0.675
+-0.25
+-0.7
+-0.175
+-0.675
+-0.7
+-0.7
+-0.45
+-0.6
+-0.7
+-0.15
+-0.15
+-0.075
+-0.45
+-0.075
+-0.5
+-0.55
+46
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.70
+********
+-0.15
+-0.475
+-0.425
+-0.475
+-0.425
+-0.6
+-0.325
+-0.35
+-0.2
+-0.25
+-0.05
+-0.175
+-0.4
+-0.15
+-0.475
+-0.275
+-0.625
+-0.5
+-0.525
+-0.325
+47
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.68
+********
+-0.4
+-0.475
+-0.2
+-0.7
+-0.6
+-0.35
+-0.375
+-0.25
+-0.6
+-0.7
+-0.625
+-0.575
+-0.525
+-0.5
+-0.625
+-0.7
+-0.45
+-0.475
+-0.3
+-0.1
+48
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.68
+********
+-0.3
+-0.175
+-0.375
+-0.025
+-0.4
+-0.2
+-0.175
+-0.6
+-0.425
+-0.125
+-0.4
+-0.475
+-0.475
+-0.7
+-0.525
+-0.7
+-0.55
+-0.525
+-0.275
+-0.6
+49
+****************Solved***************
+Mean cumulative reward over 5 episodes:-0.68
